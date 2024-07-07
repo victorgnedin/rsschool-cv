@@ -1,3 +1,48 @@
-html {
-    background-color: #FFFFFA;
+body {
+    max-width: 1024px;
+    margin: 48px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 72px;
+    border-radius: 36px;
+}
+
+header h1, header p {
+    margin: 4px 20px;
+}
+
+h2 {
+    margin-top: 32px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+pre {
+    background-color: rgb(238, 238, 238);
+    border-radius: 32px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 128px;
 }
