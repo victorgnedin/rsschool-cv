@@ -2,11 +2,102 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>CV</title>
+        <title>Victor Gnedin CV</title>
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
+        <header>
+            <img src="./images/photo.jpg" alt="Photo of Victor Gnedin">
+            <div>
+                <h1>Victor Gnedin</h1>
+                <p>Senior+ Product Designer & Mentor</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Email: <a href="victor@gned.in">victor@gned.in</a></li>
+                    <li>Phone: +44 7904 875186 🇬🇧</li>
+                    <li>Telegram: <a href="https://t.me/victorgnedin">victorgnedin</a></li>
+                    <li>Discord username: Victor Gnedin (@victorgnedin)</li>
+                    <li>Github: <a href="https://github.com/victorgnedin">victorgnedin</a></li>
+                </ul>
+            </section>
+            <section id="about">
+                <h2>About me</h2>
+                <p>Based in London 🇬🇧, Global Talent visa.</p>
+                <p>Senior+ Product Designer with 8 years of experience in delivering products cherished by up to 90 million people.</p>
+                <p>Proven in B2C and B2B products across diverse fields: FinTech, EdTech, Search Engines, and Classifieds.</p>
+                <p>Experienced with two of Russia's top three Big Tech firms, akin to FAANG.</p>
+                <p>Committed to mentoring and teaching, graduating over 100 designers and delivering 150+ hours of live webinars.</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Product, Experience (UX), Interaction, Interface (UI), Graphic & Motion Design.</li>
+                    <li>Art Direction, Information Architecture, Wireframing, Prototyping, Animation.</li>
+                    <li>Figma, Sketch, Adobe CC, Spline, Rive, HTML, CSS, JS, ThreeJS, GSAP, Swift.</li>
+                    <li>Business Models, Product-Market Fit, Qualitative and Quantitative Research, Data Analysis, CJM, A/B Testing.</li>
+                    <li>Management, Negotiation, Facilitation, Presentation, Communication.</li>
+                </ul>
+            </section>
+            <section id="courses">
+                <h2>Completed courses</h2>
+                <ul>
+                    <li><a href="https://code-basics.com/ru/languages/html">Code Basics: HTML</a> (41/41)</li>
+                    <li><a href="https://code-basics.com/ru/languages/css">Code Basics: CSS</a> (38/38)</li>
+                </ul>
+            </section>
+            <section id="code">
+                <h2>Code example</h2>
+                <p>This fucnction sets weather info on my portfolio website <a href="https://gned.in">gned.in</a>:</p>
+                <pre>
+                    <code>
 
+    function setWeather() {
+
+        fetch("https://2qtt2ujcsk.execute-api.eu-north-1.amazonaws.com/prod/weather")
+            .then(response => response.json())
+            .then(data => {
+                // Set temperature data
+                const spanTemperature = document.querySelector("span.temperature")
+                spanTemperature.textContent = data.current.tempFormatted
+            })
+            .catch(error => {
+                // Hide container if no temperature data has returned
+                const divWeather = document.querySelector("div.weather")
+                divWeather.style.display = "none"
+            })
+    }
+                    </code>
+                </pre>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English — Advanced</li>
+                    <li>Russian — Native</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <address>
+                2024. Victor Gnedin. See my <a href="https://github.com/victorgnedin">Github account</a>
+            </address>
+            <img src="./images/rs-school-logo.svg" alt="Logo of RS School">
+            <p>Made for <a href="https://rs.school/courses/javascript-ru">JS/Frontend(Stage#0) course</a></p>
+        </footer>
     </body>
 </html>
